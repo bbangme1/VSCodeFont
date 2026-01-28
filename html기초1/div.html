@@ -10,23 +10,47 @@
         /* style태그는 scc의 영역을 나타냄 */
         /* 태그 선택자
                 태그명 을 선택하기 div, img, span 등등
-                id 로 선택하기 #선택자
+                id 로 선택하기 #선택자 , id는 고유한 이름(html에서)
+                class 로 선택하기 .선택자, class는 태그 그룹화 목적
+
+                input[type='text']  -> input 태그중에 type이 text인것만 선택
+                input[name='email'] -> input 태그중에 name이 email인것 만 선택
+
+                가상선택자
+
+                단위 : 절대 단위, 상대 단위
+                절대단위 : px, pt
+                상대단위 : %, em, rem, vh, vp
+
+                여백 : padding(안쪽여백), margin(바깥쪽여백)
+                위치(Position) : 
+                배치(flex) : 
+                배치&정렬(grid) : flex 상위버전
         */
         div{
             background: red;
         }
         #bluebox{
             background-color: blue;
+            width: 10%;
+            color: white;
+        }
+        .box{
+            border:2px dotted black;
+        /*테두리선굵기 선종류    색*/
         }
     </style>
 </head>
 <body>
 
-    <div id="redbox">
+    <div id="redbox" class="box">
         나는 빨간 상자입니다.
     </div>
     <div id="bluebox">
         나는 파랑 상자입니다.
+    </div>
+    <div class="box">
+        그냥 박스이다.
     </div>
 
 
