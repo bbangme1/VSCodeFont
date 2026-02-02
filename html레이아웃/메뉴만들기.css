@@ -1,0 +1,17 @@
+/* 메뉴만들기.css */
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width:1200px; /* 최대 넓이 */
+    position: relative;
+    margin:0px auto;
+}
+
+#header{
+    padding: 10px 20px;   
+}

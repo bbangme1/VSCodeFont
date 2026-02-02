@@ -12,7 +12,16 @@
 
     <div id="box1">나는 static 이다.</div>
     <div id="box2">나는 relative 이다.</div>
-    <div id="box3">나는 absolute</div>
-
+    <div id="box3Parent">
+        <div id="box3">나는 absolute</div>
+    </div>
+    
+    <div id="wrap">
+        <div id="box4">
+            나는 브라우저 화면에 고정
+            <a href="#box3">위로 이동</a> <!--현재페이지를 다시불러오는 기능-->
+        </div>
+        <div id="box5">나도 화면에 고정인데..</div> <!--화면에 좌표에따라 고정하여 계속 출력하는 기능 // 스크롤이 꼭 존재해야됨 // 인라인에 사용하면 안됨 // 부모가 오버플로우를 가지지 않아야함 // 태그 위치가 너무 안쪽으로 들어가있으면 안됨-->
+    </div>
 </body>
 </html>
