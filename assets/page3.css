@@ -15,6 +15,15 @@
 }
 
 #logoWrap{
-    width: 1200px;
-    background-color: blue;
+    float: left;
+}
+
+.temname{
+    font-size: 25px; /* 글자크기 */
+    color: blue;  /* 글자색상 */
+    text-decoration: none; /* 글자효과 */
+    font-weight: 500; /* 글자굵기 */
+    padding: 3px 7px;
+    margin: 0 20px;
+    float: left;
 }
