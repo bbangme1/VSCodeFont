@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 1200px;
+    position: relative;
+    margin: 0px;
+}
+
+#header{
+    padding: 10px 20px;
+}
+
+#logoWrap{
+    width: 1200px;
+    background-color: blue;
+}
