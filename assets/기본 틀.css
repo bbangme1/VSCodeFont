@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. 헤더 스타일 (Flexbox 활용) */
+.header {
+    padding-top: 20px;
+}
+
+.nav-container {
+    height: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin: 10px 10px 30px 30px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+
+
+/* 3. 페이지 헤더 (상단 파란색 박스) */
+.page-header {
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 40px 50px;
+    color: #f1f1f1;
+    margin-bottom: 60px;
+}
+
+.main-title {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/* 5. 푸터 스타일 */
+.footer {
+    background-color: #283b52;
+    color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
