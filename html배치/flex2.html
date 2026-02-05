@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+       
+        .orange{background: orange; }
+        .green{background:green;}
+        .blue{background: blue;}
+        .pink{background: pink;}
+        .yellow{background: yellow;}
+        #parent{
+            border: 2px solid red;
+            width: 1000px;
+            height: 300px;
+            display: flex;
+            gap:10px;
+            flex-wrap: wrap;
+        }
+        .menuWrap{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            width: 1000px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 15px;
+        }
+        .child{ 
+            /* flex-grow 는 부모의 남은공간을 얼마나 나눠 가질지 설정
+               숫자 비율로 자식에게 크기를 준다 .*/
+            /*flex-grow: 1;*/
+            /* flex-shrink 자식들의 크기에 비해 부모의 크기가 작은경우 
+               자식들의 크기를 얼마나 줄일건지 정하는거
+               작동조건
+               1. flex 컨테이너(부모)의 너비가 정해져있고 
+               2. 아이템들(자식)의 기본 크기 합이 부모보다 클 때
+
+            */
+            width: 400px;
+            /*flex-shrink: 1;*/
+          /* flex:1;*/
+        }
+        .green{
+           /*flex-shrink: 2;*/
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child orange">1</div>
+        <div class="child green">2</div>
+        <div class="child blue">3</div>
+        <div class="child pink">4</div>
+        <div class="child yellow">5</div>
+    </div>
+    
+    
+</body>
+</html>
+<!--
+    flex - 자식태그(items) 세팅
+
+    
+
+
+
+-->

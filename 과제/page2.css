@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 1200px;
+    position: relative;
+    margin:0px auto;
+}
+
+#header{
+    padding: 10px 20px; 
+}
+
+#logoWrap{
+    height: 70px;
+    float: left;
+    margin: 10px 0px 0px 30px;
+}
+
+#logoWrap img{
+    height: 100%;
+}
+
+#navBox{
+    height: 80px;
+}
+
+#nav{
+    float: right;
+    margin: 50px 70px 5px 0px;
+}
+
+.menuLink{
+    font-size: 20px; /* 글자크기 */
+    color: #003366;  /* 글자색상 */
+    text-decoration: none; /* 글자효과 */
+    font-weight: 500; /* 글자굵기 */
+    padding: 3px 7px;
+    margin: 0 20px;
+}
+
+#main{
+    height: auto;
+}
+
+#my{
+    height: 120px;
+    background-color: #003366;
+    border-radius: 7px;
+}
+
+#myy{
+    height: 100px;
+    margin: 0px 0px 0px 50px;
+}
+
+#skill{
+    height: 50px;
+    font-size: 45px;
+    color: #f1f1f1;
+    font-weight: 500;
+    padding: 10px 0 0 0;
+    margin: 10px 0px 0px 25px;
+}
+
+#skill1{
+    height: 30px;
+    font-size: 30px;
+    color: #f1f1f1;
+    font-weight: 300;
+    margin: 20px 0 0 35px;
+}
+
+/* 스킬바 배경 */
+.barsquare {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: lightgray;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* SkillBar 하나 */
+.skillbar {
+    width: 60%;            
+    min-width: 400px;      
+}
+
+/* 스킬 이름 */
+.barname {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 8px;
+}
+
+/* 막대 스타일(공통) */
+.bar-fill {
+    height: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+/* 막대 개별 색상 */
+.bar-java {
+    background: #003366;
+}
+
+.bar-html {
+    background: orange;
+}
+
+.bar-db {
+    background: green;
+}
+
+.bar-python {
+    background: purple;
+}
+
+.bar-react {
+    background: pink;
+}
+
+.bar-nodejs {
+    background: yellow;
+}
+
+.bar-php {
+    background: brown;
+}
+
+.bar-sql {
+    background: cornflowerblue;
+}
+
+#footer{
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    background-color: #283b52;
+    border-radius: 7px;
+    color: white;
+}

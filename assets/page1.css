@@ -1,0 +1,111 @@
+/* [초기화] */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+
+/* [레이아웃] */
+#wrap { width: 1200px; margin: 0 auto; }
+
+/* [헤더: 통일] */
+header {
+    width: 100%; height: 100px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.logo-box { 
+    height: 60px; 
+    margin-left: 20px; 
+}
+.logo-box img { 
+    height: 140%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.nav-box { margin-right: 20px; }
+.nav-box a {
+    font-size: 25px; 
+    color: #003366; 
+    font-weight: 700;
+    padding: 3px 7px; 
+    margin: 0 20px;
+    position: relative;
+}
+.nav-box a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 글자 아래 간격 조절 */
+    width: 0%;
+    height: 3px;
+    background-color: #003366;
+    transition: width 0.3s ease;
+}
+
+.nav-box a:hover::after {
+    width: 100%;
+}
+
+/* =========================================
+   [타이틀 박스: 3개 페이지 완전 통일]
+   ========================================= */
+.page-title-box {
+    width: 100%;
+    height: 150px; /* 높이 통일 */
+    background-color: #003366;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 40px; /* 본문과 간격 */
+    
+    /* 내용물 수직 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 40px; /* 글자 왼쪽 여백 통일 */
+    color: #f1f1f1;
+}
+
+.page-main-title {
+    font-size: 45px; /* 큰 제목 크기 통일 */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.page-sub-title {
+    font-size: 20px; /* 소제목 크기 통일 */
+    font-weight: 300;
+}
+
+/* =========================================
+   [본문: Page1 고유 스타일 유지]
+   ========================================= */
+#middle {
+    width: 100%; margin: 0 auto; position: relative;
+    overflow: hidden; 
+}
+
+.imagebox, .imagebox2 {
+    margin: 10px; height: 400px; width: 380px;
+    background-color: #003366; 
+    float: left; 
+    padding: 0; border-radius: 7px; 
+    overflow: hidden;
+}
+
+.imagebox img, .imagebox2 img {
+    display: block; height: 200px; width: 100%; object-fit: cover;
+}
+
+.textbox { width: 100%; height: 200px; padding: 20px; }
+.style1 { font-weight: bold; font-size: 25px; color: #f1f1f1; margin-bottom: 5px; }
+.style2 { font-size: 20px; color: #f1f1f1; }
+
+/* [푸터: 통일] */
+footer {
+    width: 100%; background-color: #003366;
+    margin-top: 50px; 
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 60px 0; text-align: center;
+    color: #f1f1f1; clear: both;
+}
+.footer-text { font-size: 20px; margin-bottom: 5px; }
