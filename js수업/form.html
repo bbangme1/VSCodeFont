@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!-- form태그 안에 있어야만 정상 작동함 -->
+        <h4>type = "text"는 문자 숫자 특수문자 입력가능</h4>
+        <input type="text" name="id" id="id"> <br> <!-- name과 id명을 같이해주는게 좋음 -->
+
+        <h4>type = "password"는 비밀번호 입력시 사용 모든텍스트가 점으로 표현</h4>
+        <input type="password" name="pw" id="pw"> <br>
+
+        <h4>type = "number"는 숫자만 입력가능 min,max,step 설정가능</h4>
+        <input type="number" name="age" id="age" min="1" max="20" step="3"> <br>
+        <!-- min 최소값, max 최대값, step 증가량 -->
+
+        <h4>type = "email"는 이메일형식을 감지 할 수 있는 타입</h4>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력하세요."> <br>
+        <!-- placeholder = 메시지입력창에 표출할 메시지 입력 -->
+        <button>등록</button> <br>
+
+        <h4>type = "color"는 생삭을 선택할수 있는 타입</h4>
+        <input type="color" name="bgcolor" id="bgcolor"> <br>
+
+        <h4>type = "range"는 슬라이드 형태로 색,음량,밝기 등 조절</h4>
+        <input type="range" name="slide"><br>
+        <!-- 모양 및 색상 바꾸는거는 css로 가능 -->
+
+        <h4>type = "date"는 날짜 선택</h4>
+        <input type="date" name="select_date" id=""><br>
+
+        <h4>type = "time"는 시간 선택</h4>
+        <input type="time" name="newTime" id=""><br>
+
+        <h4>type = "month"는 연.월 선택</h4>
+        <input type="month" name="" id=""><br>
+        <h4>날짜타입은 week 연.주차 선택 , datetime-local 날짜 + 시간 선택</h4>
+
+        <h4>type = "checkbox"는 다중선택을 위한 타입</h4>
+        <input type="checkbox" name="관심사" value="game">게임 
+        <input type="checkbox" name="관심사" value="movie">영화
+        <input type="checkbox" name="관심사" value="music">음악<br> 
+        <!-- 체크박스 옆에 글을쓰려면 input태그 밖에 써줘야됨 
+             checkbox는 다중선택 radio는 한개만 선택 가능 
+             checkbox와 radio는 type name value로 써줘야함
+             name은 똑같이써주고 value는 값과 똑같이 -->
+        <h4>type = "radio"는 여러선택지 중에 하나만 선택</h4>
+        <input type="radio" name="과일" value="banana" id="banana">
+        <label for="banana">바나나</label>
+        <input type="radio" name="과일" value="">사과
+        <input type="radio" name="과일" value="">오렌지 <br>
+        <!-- radio는 labal과 같이 써줘야 함
+             labal for이름과 ridio id이름은 같아야함 -->
+        <h4>type = "file"는 파일 업로드를 위한 타입</h4>
+        <input type="file" name="myfile" id=""><br>
+
+        <h4>type = "hidden"는 사용자에게 제[공하는 목적이 아닌 페이지 
+            유지, 관리, 데이터 활용 등 페이지처리를 위해 사용된다. </h4>
+        <input type="hidden" name="board_id" value="123">
+        <button>등록</button>
+
+    </form>
+</body>
+</html>
