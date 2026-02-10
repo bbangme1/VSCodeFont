@@ -1,36 +1,36 @@
 #loginForm{
     width: 500px;
     margin: 150px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
-
 .loginFormBox{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; 
 }
-
 .input-field{
     display: flex;
     width: 100%;
     align-items: center;
     gap: 10px;
 }
-
 .input-field label{
     width: 120px;
     font-size: 30px;
 }
-
 .input-field input{
     font-size: 30px;
-    width: calc(100% - 120px);
+    width:calc(100% - 120px) 
 }
-
 .loginButton{
     text-align: center;
+   
 }
-
 .forgetAndUp{
     display: flex;
     justify-content: space-between;
