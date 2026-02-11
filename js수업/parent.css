@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 800px;
+    margin: 50px auto;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  width: 80px; 
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid black; 
+  border-radius: 7px;
+}
+
+button {
+  padding: 9px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.spacer {
+  width: 75px; 
+}
