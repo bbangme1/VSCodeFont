@@ -13,6 +13,11 @@
     overflow: hidden;
 }
 
+body{
+    background: linear-gradient(#8cbaff40, #ffffff);
+}
+
+
 .menuBar {
     display: flex;
     justify-content: space-between; /* 로고 아이콘 각각 양쪽에 붙이기 */
@@ -60,39 +65,34 @@
 /* -------------------------------- */
 
 .main {
-    padding: 150px 50px 50px 50px;
+    padding: 150px 50px 260px 50px;
     margin: 0 10%;
-}
-element.style {
-    width: 400px;
 }
 
 .mainFlex {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    gap: 30px;
     align-items: center;
-    /* flex-direction: column-reverse; */
-    margin: 0 auto;
 }
 
 .mainImage {
-border-radius: 40px;
-border-radius: 40px;
-    width: 450px;
-    height: 450px;
-    overflow: hidden;
-    flex-shrink: 0;    
-    /* 사진을 정중앙으로*/
-    margin: 0 auto;
+    border-radius: 40px;
+    width: 60%;
+    height: 500px;
+    overflow: hidden /* 이미지 크롭 */
 }
 
 .mainImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: none;
+    width: 110%; /* 부모 박스 너비에 꽉 차게 */
+    height: 110%; /* 부모 박스 높이에 꽉 차게 */
+    object-fit: cover;/* 비율을 유지하면서 박스 채움 */
     object-position: center;
+    transition: 1s ease-in-out;
+}
+
+.mainImage img:hover {
+    scale: 1.1;
 }
 
 @keyframes fadeIn {
@@ -120,15 +120,15 @@ border-radius: 40px;
     padding: 10px 20px;
     display: inline-block;
     background-color: #2877ea;
-    font-size: px;
     color: white;
 
 }
 
 .mainCopy p2{
-    margin: 20px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
     font-size: 23px;
-    color: #8cbaff;
+    color: rgb(50, 50, 50);
+    opacity: 50%;
 }
 /* -------------------------------- */
 

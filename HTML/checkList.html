@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget - Plip</title>
+    <title>Checklist - Plip</title>
 
     <link rel = "icon" href="./source/favicon.svg" type="image/svg+xml">
-    <link rel = "stylesheet" href="./budgetStyle.css">
+    <link rel = "stylesheet" href="./checklistStyle.css">
 
-    <script src="./checkList.js"></script>
 </head>
 <body>
     
@@ -16,20 +15,20 @@
         <div class = "menuBar">
             <div class="menuLogo">
                 <a href="index.html">
-                    <img src=".\source\logo2.svg">
+                    <img src=".\source\logo.svg">
                 </a>
             </div>
             <div class="menuButton">
-                <a href="./trip.html">
+                <a href="trip.html">
                     <p>TRIP</p>
                 </a>
-                <a href="./schedule.html">
+                <a href="schedule.html">
                     <p>SCHEDULE</p>
                 </a>
-                <a href="./budget.html">
+                <a href="budget.html">
                     <p>BUDGET</p>
                 </a>
-                <a href="./checkList.html">
+                <a href="checklist.html">
                     <p>CHECKLIST</p>
                 </a>
             </div>
@@ -39,54 +38,116 @@
     <main>
         <div class = "main">
             <div class ="mainFlex">
-                <div class = "mainImage">
-                    <img src =".\source\BG_img4.png">
-                </div>
                 <div class = "mainCopy">
-                    <p> 여행 체크리스트</p>
-                    <h1>준비물 체크리스트로, <br> 여행 준비를 더 완벽하게</h1>
-                    <p2>플립으로 여행 준비물을 간편하게 챙기세요.</p2>
+                    <p>Checklist</p>
+                    <h1>체크, 또 체크, <br> 빠짐없이 완벽하게✔</h1>
                 </div>
-                
+                <div class ="subCopy">
+                    <div class="subCopyDiv">
+                        <div class="subIco">
+                            <img src="./source/add.svg">
+                        </div>
+                        <p>쉽게 추가하고</p>
+                    </div>   
+                    <div class="subCopyDiv">
+                        <div class="subIco">
+                            <img src="./source/quick.svg">
+                        </div>
+                        <p>빠르게 지우고</p>
+                    </div>
+                    <div class="subCopyDiv">
+                        <div class="subIco">
+                            <img src="./source/travel.svg">
+                        </div>
+                        <p>가볍게 떠나요</p>
+                    </div>    
+                </div>
+
             </div>
         </div>
-        <div class ="chartMain">
-            <div class ="chartInfo">
-                <div class="chartTitle">
-                    <h2>여행 체크리스트 관리</h2>
+        <div id="ckFlex">
+            <div class="checklistBox">
+                <div class="checklistBox2">
+                    <p id="checkItem">GADGET</p>
+                    <p id="checkName">카메라</p>
+                    <input type="checkbox" id="checkbox">
                 </div>
-                <div class="chartText1">
-                    <div class ="ctText1">
-                        <p>준비물 (Text)</p>
-                        <input type="text" id="itemName" class="textBox"> 
-                    </div>
-                    <div class ="ctText2">
-                        <p>수량 (Number)</p>
-                        <input type="text" id="itemCount" class="textBox">
-                    </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">ITEM</p>
+                    <p id="checkName">세면도구</p>
+                    <input type="checkbox" id="checkbox">
                 </div>
-                <div class="button">
-                    <button id="chartBt">준비물 내역 등록</button>
+                <div class="checklistBox2">
+                    <p id="checkItem">CLOTHES</p>
+                    <p id="checkName">우비</p>
+                    <input type="checkbox" id="checkbox">
                 </div>
-                <div class="chart">
-                    <table class="chartTable">
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>준비물 항목</th>
-                                <th>수량 (개)</th>
-                                <th>체크</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
+                <div class="checklistBox2">
+                    <p id="checkItem">TRAVEL</p>
+                    <p id="checkName">여권</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">TRAVEL</p>
+                    <p id="checkName">유심칩</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+            </div>
+            <div class="checklistBox">
+                <div class="checklistBox2">
+                    <p id="checkItem">CLOTHES</p>
+                    <p id="checkName">볼캡</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">ITEM</p>
+                    <p id="checkName">샤워기 필터</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">BEUTY</p>
+                    <p id="checkName">폼클렌징</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">GADGET</p>
+                    <p id="checkName">에어팟</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">ITEM</p>
+                    <p id="checkName">지갑</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+            </div>
+            <div class="checklistBox">
+                <div class="checklistBox2">
+                    <p id="checkItem">GADGET</p>
+                    <p id="checkName">카메라</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">ITEM</p>
+                    <p id="checkName">세면도구</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">CLOTHES</p>
+                    <p id="checkName">우비</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">TRAVEL</p>
+                    <p id="checkName">여권</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="checklistBox2">
+                    <p id="checkItem">TRAVEL</p>
+                    <p id="checkName">유심칩</p>
+                    <input type="checkbox" id="checkbox">
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>

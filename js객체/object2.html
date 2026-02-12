@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="keyword">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+                <th>취미</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>이순신</td>
+                <td>34</td>
+                <td>통영시 어딘구</td>
+                <td>등산</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>25</td>
+                <td>서울시 어딘구</td>
+                <td>독서</td>
+            </tr>
+            <tr>
+                <td>김철수</td>
+                <td>28</td>
+                <td>부산시 어딘구</td>
+                <td>운동</td>
+            </tr>
+            <tr>
+                <td>박민수</td>
+                <td>30</td>
+                <td>대구시 어딘구</td>
+                <td>음악감상</td>
+            </tr>
+            <tr>
+                <td>김철수</td>
+                <td>32</td>
+                <td>인천시 어딘구</td>
+                <td>사진촬영</td>
+            </tr>
+            <tr>
+                <td>문익점</td>
+                <td>27</td>
+                <td>광주시 어딘구</td>
+                <td>요리</td>
+            </tr>
+            <tr>
+                <td>장보고</td>
+                <td>35</td>
+                <td>전주시 어딘구</td>
+                <td>낚시</td>
+            </tr>
+            <tr>
+                <td>노진구</td>
+                <td>29</td>
+                <td>서울시 어딘구</td>
+                <td>게임</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+<script>
+    let key = document.getElementById("keyword");
+
+    key.addEventListener('keyup',function(){
+        const rows = Array.from(document.querySelectorAll("#tableBody tr"));
+        
+        let value = this.value;
+        // 입력한 텍스트가 맞는것만 찾기
+        const res = rows.filter( row => 
+                row.textContent.toLowerCase().includes(value)); 
+       
+        // 테이블에 전체 감추기
+        rows.forEach( row => row.style.display = "none" );
+
+        // 찾은 tr만 보이기
+        res.forEach( row => row.style.display = "" ); 
+    });
+
+</script>

@@ -19,16 +19,16 @@
                 </a>
             </div>
             <div class="menuButton">
-                <a href="">
+                <a href="trip.html">
                     <p>TRIP</p>
                 </a>
-                <a href="">
+                <a href="schedule.html">
                     <p>SCHEDULE</p>
                 </a>
                 <a href="budget.html">
                     <p>BUDGET</p>
                 </a>
-                <a href="checkList.html">
+                <a href="checklist.html">
                     <p>CHECKLIST</p>
                 </a>
             </div>
@@ -48,63 +48,68 @@
                 </div>
             </div>
         </div>
-        <div class ="chartMain">
-            <div class ="chartInfo">
-                <div class="chartTitle">
-                    <h2>여행 예산 관리</h2>
-                </div>
-                <div class="chartText1">
-                    <div class ="ctText1">
-                        <p>지출 항목명 (Text)</p>
-                        <input type="text" class="textBox">
+        <div class="chartFlex">
+            <div class ="chartMain">
+                <div class ="chartInfo">
+                    <div class="chartText1">
+                        <div class ="ctText1">
+                            <p>지출 항목</p>
+                            <input type="text" class="textBox" placeholder="   지출항목을 입력해주세요.">
+                        </div>
+                        <div class ="ctText2">
+                            <p>금액</p>
+                            <input type="text" class="textBox" placeholder="   금액을 입력해주세요.">
+                        </div>
                     </div>
-                    <div class ="ctText2">
-                        <p>금액 (Number)</p>
-                        <input type="text" class="textBox">
+                    <div class="button">
+                        <button id="chartBt">지출 내역 등록</button>
                     </div>
-                </div>
-                <div class="button">
-                    <button id="chartBt">지출 내역 등록</button>
-                </div>
-                <div class="chart">
-                    <table class="chartTable">
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>지출 항목</th>
-                                <th>금액 (원)</th>
-                                <th>내용</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>기차표 예매</td>
-                                <td>33,600</td>
-                                <td>교통비</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>에어비앤비 결제</td>
-                                <td>285,000</td>
-                                <td>숙박비</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>경주 맛집</td>
-                                <td>58,000</td>
-                                <td>식비</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="chartTotal">
-                        <p> 총 지출 예상 금액</p>
-                        <p> 376,600원</p>
-                </div>
+                    <div class="chart">
+                        <table class="chartTable">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>지출 항목</th>
+                                    <th>금액 (원)</th>
+                                    <!-- <th>내용</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>기차표 예매</td>
+                                    <td>33,600</td>
+                                    <!-- <td>교통비</td> -->
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>에어비앤비 결제</td>
+                                    <td>285,000</td>
+                                    <!-- <td>숙박비</td> -->
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>경주 맛집</td>
+                                    <td>58,000</td>
+                                    <!-- <td>식비</td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chartTotal">
+                            <p1> 총 지출 예상 금액</p1>
+                            <p2> 376,600원</p2>
+                    </div>
+                </div>            
+            </div>
+        <div class="chartSide">
+            <div class="chartSideText1">
+                <p id="sideText1">흩어진 지출 내역, <br> 플립에 쏙!</p>
+                <p id="sideText2">1원 단위까지 확실하게 예산과 지출을 한눈에 파악하세요.</p>
+                <button class="sideBt"><p>지출내역 등록하기</p></button>
             </div>
         </div>
-
+    </div>
 
     </main>
 

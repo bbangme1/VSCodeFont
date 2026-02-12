@@ -32,7 +32,7 @@
 
 .menuButton {
     display: flex;
-    align-items: center; /* 플렉스 가운데 맞춤*/
+    align-items: center;
     gap: 30px;
     overflow: hidden;
 }
@@ -60,7 +60,7 @@
 /* -------------------------------- */
 
 .main {
-    padding: 150px 50px 350px 50px;
+    padding: 150px 50px 260px 50px;
     margin: 0 10%;
 }
 
@@ -75,7 +75,6 @@
     border-radius: 40px;
     width: 60%;
     height: 500px;
-    background-color: #2877ea;
     overflow: hidden /* 이미지 크롭 */
 }
 
@@ -85,6 +84,11 @@
     object-fit: cover; /* 비율을 유지하면서 박스 채움 */
     transform: scale(1.3) translateY(-45px);
     object-position: 80% center;
+    transition: 1s ease-in-out;
+}
+
+.mainImage img:hover {
+    scale: 1.1;
 }
 
 @keyframes fadeIn {
@@ -112,7 +116,6 @@
     padding: 10px 20px;
     display: inline-block;
     background-color: #2877ea;
-    font-size: px;
     color: white;
 
 }
@@ -160,7 +163,6 @@
 }
 
 .imagebox3 {
-    margin-top: 50px;
     display: flex;
     background-color: #2877ea;
     height: 100px;
@@ -171,49 +173,90 @@
 
 /* -------------------------------- */
 
-.chartMain {
-    margin: 0px 10%;
-    border-radius: 25px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
-    background-color: rgb(245, 245, 245);
-    position: relative;
+.chartFlex {
+    display: flex;
+    background-color: #2877ea;
+    /* justify-content: space-between; */
 }
 
-.chartTitle {
+.chartMain {
+    width: 450px;
+    margin: 70px auto 70px auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+    background: linear-gradient(#e0ecff, #ffffff);
+}
+
+.chartSide {
+    background:linear-gradient(#2877ea, #1ec692);
+    width:50%;
+    height: 950px;
     display: flex;
-    justify-content: center;
-    padding: 50px;
-    font-size: 30px;
+    align-items: center;
+}
+
+.chartSideText1 {
+    margin-left: 30%;
+}
+
+.chartSideText1 #sideText1{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.chartSideText1 #sideText2{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+.sideBt {
+    border: 1px;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    background-color: #ffffff;
+    transition: inherit;
+    cursor: pointer;
     color: #2877ea;
+    transition: .3s ease-in-out;
+}
+
+.sideBt:hover {
+    color: white;
+    background-color: #2877ea;
 }
 
 .chartText1 {
-    padding: 0px 250px 10px 250px;
+    padding: 50px 30px;
     display: flex;
     justify-content: center;
     gap: 20px;
     color:rgb(50, 50, 50);
     font-size: 17px;
     font-weight: 600;
+    flex-wrap: wrap;
 }
 
-.ctText1 {
+.ctText1, .ctText2{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap:20px;
-}
-
-.ctText2 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap:20px;
+    width: 100%;
+    max-width: 400px;
+    gap:10px;
 }
 
 .textBox {
     height: 40px;
-    width: 400px;
+    width: 100%;
     border-radius: 7px;
     border: 1px solid rgb(216, 216, 216);
 }
@@ -224,54 +267,73 @@
     width: 100%;
     padding: 0px 20px;
     transition: .3s ease-out;
+   
 }
 
 #chartBt {
-    margin-bottom: 70px;
-    border-radius: 7px;
-    width: 820px;
-    color: white;
-    font-size: 20px;    
-    font-weight: 600;
+    border: 1px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 220px;
+    color: #ffffff;
+    font-size: 20px;
     height: 50px;
-    border: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: #2877ea;
     transition: inherit;
     opacity: 80%;
+    cursor: pointer;
 }
 
 #chartBt:hover {
-    background-color: #2877ea;
     color: white;
-    opacity: 100%;
-}
-
-.chartMain {
-    margin-top: 50px;
-    padding-bottom: 500px;
+    background-color: #004be1;
 }
 
 .chart {
-    background-color: white;
-    padding: 250px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .chartTable{
     width: 100%;
+    max-width: 720%;
     border-collapse: collapse;
 }
 
 .chartTable th {
-    background-color: rgb(216, 216, 216);
-}
-
-.chartTable th, .chartTable td {
+    border-bottom: 1px solid #2877ea;
+    color: #4e4e4e;
     font-size: 20px;
+    padding: 20px;
     text-align: left;
 }
 
+.chartTable td {
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #a4c8ff;
+}
+
 .chartTotal {
+    padding: 0px 80px 40px 80px;
+    gap: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.chartTotal p1 {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chartTotal p2 {
+    font-weight: bold;
+    color: #2877ea;
+    font-size: 20px;
 }
