@@ -1,12 +1,12 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 #wrap{
-    width: 800px;
-    margin: 50px auto;
+  width: 800px;
+  margin: 50px auto;
 }
 
 .nameBox {
