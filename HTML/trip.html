@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trip - Plip</title>
+    <title>Trip - Plip</title>
 
     <link rel = "icon" href="./source/favicon.svg" type="image/svg+xml">
     <link rel = "stylesheet" href="./tripstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div class = "menuBar">
             <div class="menuLogo">
                 <a href="index.html">
-                    <img src="./source/logo2.svg">
+                    <img src="./source/logo.svg">
                 </a>
             </div>
             <div class="menuButton">
@@ -39,50 +40,103 @@
         <div class = "main">
             <div class ="mainFlex">
                 <div class = "mainCopy">
-                    <p> 여행 기본 정보 관리</p>
+                    <p> 나의 모든 여정, 하나의 이야기로</p>
                     <h1> 여행 계획 한눈에 보기</h1>
-                    <p2>플립에서 준비 중인 여행부터 지난 여행까지 모두 확인하세요.</p2>
+                    <p2>준비 중인 설렘도, 지나간 추억도. <br> 플립에서 당신의 여정을 이어가세요.</p2>
                 </div>
-                <div class = "mainImage">
-                    <img src ="./source/BG_img.png">
+                <div class = "mainSource">
+                    <img src ="./source/TripImage.png">
                 </div>
             </div>
         </div>
         
         <div class="trip-list-section">
             <div class="list-header">
-                <h2 class="list-title"> 여행 목록</h2>
-            </div>
+            <h2 class="list-title"> 다가오는 여행</h2>
             <div class="header">
                 <div class="trip-box">
-                    <div class="image_jeju"><img src="./source/제주도 천지연 폭포.png"></div>
-                    <div>
+                    <div class="imageBox">
+                        <img src="./source/제주2.png">
+                    </div>
+                    <div class="boxText">
                         <h3>제주도 가족 여행</h3>
-                        <p>2026.04.01 ~ 2026.04.05</p>
-                        <p>1일차:제주공항 도착 -> <br>도두동 무지개 해안도로 산책</p>
-                        <p>2일차:우도 - > 서빈백사 산책 -> <br>성산일출봉,섭지코지탐방</p>
-                        <p>3일차:사려니 숲길(곶자왈 자연체험) - > <br>서귀포 매일올레시장(먹거리투어)</p>
-                        <p>4일차:아르떼뮤지엄 제주(미디어 아트) -> <br>오설록 티 뮤지엄</p>
+                        <span class="emoji-font">🇰🇷</span>
+                        <p>2026.04.01~2026.04.05</p>
+                    </div>
+                </div>  
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/오사카.png">
+                    </div>
+                    <div class="boxText">
+                        <h3>일본 오사카 여행</h3>
+                        <span class="emoji-font">🇯🇵</span>
+                        <p>2026.05.01~2026.05.05</p>
+                    </div>   
+                </div>
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/부산2.png">
+                    </div>
+                    <div class="boxText">  
+                        <h3>부산 힐링 여행</h3>
+                        <span class="emoji-font">🇰🇷</span>
+                        <p>2025.06.18~2025.06.20</p>
+                    </div>
+                </div>
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/서울.png">
+                    </div>
+                    <div class="boxText">  
+                        <h3>서울 당일치기</h3>
+                        <span class="emoji-font">🇰🇷</span>
+                        <p>2025.09.03~2025.09.03</p>
+                    </div>
+                </div>    
+            </div>
+
+            <h2 class="list-title"> <br>지난 여행</h2>
+            <div class="header">
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/후쿠오카.png">
+                    </div>
+                    <div class="boxText">
+                        <h3>후쿠오카 탐방</h3>
+                        <span class="emoji-font">🇯🇵</span>
+                        <p>2024.03.02~2026.03.05</p>
                     </div>
                 </div>  
         
-                <div class="trip-box1">
-                    <div class="img-box1"><img src="./source/일본 오사카.png"></div>
-                    <div>
-                        <h3>일본 오사카 여행</h3>
-                        <p>2026.04.01~2026.04.02</p>
-                        <p>1일차:간사이공항 도착 -> 오사카성 산책
-                                - > 헵바이브 관람차</p>
-                        <p> 2일차:돈토보리 이동 -> 글리코상 인증샷 -> 타코야끼,라멘 먹방 투어 </p>
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/제주.png">
+                    </div>
+                    <div class="boxText">
+                        <h3>제주 4박 5일</h3>
+                        <span class="emoji-font">🇰🇷</span>
+                        <p>2024.04.01~2024.04.05</p>
                     </div>   
                 </div>
-                <div class="trip-box3">
-                    <div class="imagebox2"><img src="./source/부산.png"></div>
-                    <div>  
-                        <h3>부산 힐링 여행</h3>
-                        <p>2025.06.20~2025.06.22</p>
-                        <p>1일차:해운대 해변열차 -> 해동용궁사</p>
-                        <p>2일차:롯데월드 - > 해운대 해수욕장</p>
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/산토리니.png">
+                    </div>
+                    <div class="boxText">  
+                        <h3>유럽 한 달 살기</h3>
+                        <span class="emoji-font">🇬🇷</span>
+                        <p>2024.08.15~2025.09.15</p>
+                    </div>
+                </div>
+                <div class="trip-box">
+                    <div class="imageBox">
+                        <img src="./source/다낭.png">
+                    </div>
+                    <div class="boxText">  
+                        <h3>다낭-호이안 여행</h3>
+                        <span class="emoji-font">🇻🇳</span>
+                        <p>2025.12.20~2025.12.25</p>
                     </div>
                 </div>
             </div>

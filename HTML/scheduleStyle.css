@@ -179,53 +179,56 @@ body{
 
 /* -------------------------------- */
 
-.chartMain {
-    margin-top: 0px; 
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 25px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
-    background-color: rgb(245, 245, 245);
-    position: relative;
+.chartFlex {
+    display: flex;
+    background-color: #2877ea;
+    /* justify-content: space-between; */
 }
 
-.chartTitle {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    font-size: 30px;
-    color: #2877ea;
+.chartMain {
+    width: 80%;
+    margin: 70px auto 70px auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+    background: linear-gradient(#ffffff, #e0ecff50);
+}
+
+.chartTitle h2 {
+    text-align: center;
+    padding-top: 40px;
+    color:#2877ea;
 }
 
 .chartText1 {
-    /* 좌우 여백을 줄이고 공간 확보 */
-    padding: 0 40px 20px 40px; 
+    padding: 50px 30px;
     display: flex;
-    justify-content: space-between; /* 요소들 사이 간격을 균등하게 */
-    align-items: flex-start;
-    gap: 15px; /* 항목 간의 물리적 간격 */
-    color: rgb(50, 50, 50);
-    font-size: 15px; 
+    justify-content: center;
+    gap: 10px;
+    color:rgb(50, 50, 50);
+    font-size: 17px;
     font-weight: 600;
-    width: 100%; /* 부모 너비에 맞춤 */
+    flex-wrap: wrap;
 }
 
-/* 5개 항목 공통 적용 */
-.ctText1, .ctText2, .ctText3, .ctText4, .ctText5 {
+.ctText1, .ctText2, .ctText3, .ctText4, .ctText5{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;    /* 5개 박스를 균등하게 1:1:1:1:1로 분배 */
-    min-width: 0; /* flex 박스 안에서 요소가 튀어나가는 것을 방지 */
+    justify-content: center;
+    max-width: 400px;
+    gap:20px;
+}
+
+.ctText1 p, .ctText2 p, .ctText3 p, .ctText4 p,.ctText5 p {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    text-align: left;
 }
 
 .textBox {
     height: 40px;
-    width: 100%; 
+    width: 180px;
     border-radius: 7px;
     border: 1px solid rgb(216, 216, 216);
-    padding: 0 10px;
-    box-sizing: border-box; 
 }
 
 .button {
@@ -234,65 +237,76 @@ body{
     width: 100%;
     padding: 0px 20px;
     transition: .3s ease-out;
+   
 }
 
 #chartBt {
-    margin-bottom: 70px;
-    border-radius: 7px;
-    width: calc(30% - 170px); /* 등록 버튼 가운데 항목과 크기 일치*/
-    max-width: 1200px;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
+    border: 1px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 220px;
+    color: #ffffff;
+    font-size: 20px;
     height: 50px;
-    border: 0;
-    background-color: rgb(50, 50, 50);
-    transition: .3s ease-out;
-    opacity: 0.8;
+    background-color: #2877ea;
+    transition: inherit;
+    opacity: 80%;
+    cursor: pointer;
 }
 
 #chartBt:hover {
-    background-color: #2877ea;
     color: white;
-    opacity: 100%;
-}
-
-.chartMain {
-    margin-top: 50px;
-    padding-bottom: 500px;
+    background-color: #004be1;
 }
 
 .chart {
-    background-color: white;
-    padding: 40px; 
-    margin: 0 40px; /* 좌우 여백을 입력 폼과 맞춤 */
-    border-radius: 15px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.chartTable {
+.chartTable{
     width: 100%;
+    max-width: 720%;
     border-collapse: collapse;
-    table-layout: fixed; /* 컬럼 너비를 균등하게 고정 */
-}
-
-.chartTable th, .chartTable td {
-    padding: 15px 10px; /* 셀 내부 여백 */
-    font-size: 16px;    /* 5개 항목이므로 폰트 크기 소폭 조절 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    border-bottom: 1px solid rgb(230, 230, 230);
-    word-break: break-all; /* 내용이 길어질 경우 자동 줄바꿈 */
 }
 
 .chartTable th {
-    background-color: rgb(240, 240, 240);
-    color: #2877ea; /* 헤더 강조색 */
-    font-weight: 700;
+    border-bottom: 1px solid #2877ea;
+    color: #4e4e4e;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
 }
 
-/* 첫 번째 No. 컬럼만 너비를 좁게 설정 */
-.chartTable th:first-child, 
-.chartTable td:first-child {
-    width: 60px;
+.chartTable td {
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #a4c8ff;
 }
+
+.chartTotal {
+    padding: 0px 80px 40px 80px;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chartTotal p1 {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chartTotal p2 {
+    font-weight: bold;
+    color: #2877ea;
+    font-size: 20px;
+}
+
 
 

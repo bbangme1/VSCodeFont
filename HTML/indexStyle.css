@@ -240,7 +240,7 @@
     justify-content: space-between;
     padding: 0;
     height: 400px;
-    background: linear-gradient(180deg, #2877ea 0%, #3bc1a8 100%);
+    background: linear-gradient(#2877ea, #004be1);
     line-height: 1;
     align-items: center;
     width: 100%;
@@ -291,13 +291,15 @@
 }
 
 .textArea h3{
+    margin-top: 20px;
     padding: 10px 10px;
-    width: 500px;
+    width: 520px;
     box-sizing: border-box;
     border-radius: 50px;
     background-color: white;
     text-align: center;
     color: #2877ea;
+    font-size: 17px;
 
 }
 

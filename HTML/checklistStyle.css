@@ -7,7 +7,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
-    background: linear-gradient(180deg, #2877ea 0%, #3bc1a8 100%);
+    background: linear-gradient(#2877ea, #3bc1a8);
     background-attachment: fixed;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .menuButton p:hover {
-    color: #2877ea;
+    color: #8cbaff;
 }
 
 .menuButton a {
